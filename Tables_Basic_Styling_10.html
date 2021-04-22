@@ -1,0 +1,79 @@
+<!-- for styling the table we have to use style tag in head tag -->
+<!-- we can the tag name to which we want to apply style -->
+
+<!-- 10. Adding style to specific table using id attribute -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables Basic Styling without CSS</title>
+    <style>
+      table,th,td {
+        border: 1px solid
+      }
+      th, td{
+        padding:10px;
+      }
+      td{
+        text-align:center;
+      }
+
+      /* using # we can apply style to id attribute */
+      #t01{
+        width: 80%;
+        background-color: #f1f1c1;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Table with caption:</h4>
+          <table style="width:100%">
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+              </tr>
+          </table>
+      <br>
+ <!-- let's define other table with id attribute t01 -->
+      <table id="t01">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+      </table>
+  </body>
+</html>

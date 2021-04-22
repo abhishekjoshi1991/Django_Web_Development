@@ -1,0 +1,53 @@
+<!-- for styling the table we have to use style tag in head tag -->
+<!-- we can the tag name to which we want to apply style -->
+
+<!-- 7. html code to create merged table as shown in fig named Tables_Basic_Styling_7.gif -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables Basic Styling without CSS</title>
+    <style>
+      table,th,td {
+        border: 1px solid
+      }
+      th, td{
+        padding:10px;
+      }
+      td{
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="Tables_Basic_Styling_7.gif" alt=" Image Not found!!">
+    <!-- specified the width also -->
+        <table style="width:50%">
+          <!-- instead of using thead tag we can also use tr tag -->
+            <tr>
+              <th rowspan="2"></th>
+              <th colspan="2"> Average </th>
+              <th rowspan="2"> Red Eyes </th>
+            </tr>
+            <tr>
+              <th> Height </th>
+              <th> Weight </th>
+            </tr>
+            <tr>
+              <td>Males</td>
+              <td> 1.9 </td>
+              <td> 0.003 </td>
+              <td> 40%</td>
+            </tr>
+            <tr>
+              <td>Females</td>
+              <td> 1.7 </td>
+              <td> 0.002 </td>
+              <td> 43%</td>
+            </tr>
+
+        </table>
+    <br>
+  </body>
+</html>

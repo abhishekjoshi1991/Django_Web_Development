@@ -1,0 +1,49 @@
+<!-- for styling the table we have to use style tag in head tag -->
+<!-- we can the tag name to which we want to apply style -->
+
+<!-- 3. align :  By default, table headings are bold and centered. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables Basic Styling without CSS</title>
+    <style media="screen">
+      table,th,td {
+        border: 1px solid
+      }
+      th, td {
+        padding: 10px;
+      }
+      th{
+        text-align:left;
+      }
+      td{
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- specified the width also -->
+    <table width=80%>
+      <thead>
+        <th> Sr no. </th>
+        <th> Name </th>
+        <th> Roll Number </th>
+      </thead>
+      <tr>
+        <td> 1 </td>
+        <td> Abhishek </td>
+        <td> 100 </td>
+      </tr>
+
+      <!-- second row -->
+      <tr>
+        <td> 2 </td>
+        <td> Sukanya </td>
+        <td> 101 </td>
+      </tr>
+    </table>
+    <br>
+  </body>
+</html>

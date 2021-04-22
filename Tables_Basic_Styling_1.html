@@ -1,0 +1,41 @@
+<!-- for styling the table we have to use style tag in head tag -->
+<!-- we can the tag name to which we want to apply style -->
+<!-- 1. adding border of 5px -->
+
+<!-- if we apply style to only table tag then it will applied to whole table,
+instead we want to apply border to each cell, to check delete td, th from style tag -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables Basic Styling without CSS</title>
+    <style media="screen">
+      table,th,td {
+        border: 5px solid
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th> Sr no. </th>
+        <th> Name </th>
+        <th> Roll Number </th>
+      </thead>
+      <tr>
+        <td> 1 </td>
+        <td> Abhishek </td>
+        <td> 100 </td>
+      </tr>
+
+      <!-- second row -->
+      <tr>
+        <td> 2 </td>
+        <td> Sukanya </td>
+        <td> 101 </td>
+      </tr>
+    </table>
+    <br>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Lists in HTML </title>
+  </head>
+  <body>
+    <!-- Sometimes we require to organize the data. For this html uses two types of lists.  -->
+    <!-- Ordered and Unordered lists -->
+    <h1> Lists </h1>
+
+    <h2> Ordered List : An ordered list can be numerical or alphabetical </h2>
+    <ol>
+      <li> First </li>
+      <li> Second </li>
+      <li> Third </li>
+    </ol>
+
+    <h2> Unordered Lists: Represented by bullet </h2>
+    <ul>
+      <li> First Unordered </li>
+      <li> Second Unordered </li>
+      <li> Third Unordered </li>
+    </ul>
+
+    <h2> Nested List</h2>
+    <p> we can put unordered list inside ordered list or vice versa </p>
+
+    <ol>
+      <li> First </li>
+      <ul>
+        <li> Inside first </li>
+        <li> second inside first </li>
+      </ul>
+      <li> Second </li>
+    </ol>
+
+    <h2> Changing numbering and bullet type of lists </h2>
+    <ol type="a">
+      <li> lower case letters </li>
+      <li> lower case letters 2</li>
+    </ol>
+    <ol type="A">
+      <li> Upper case letters </li>
+      <li> Upper case letters 2 </li>
+    </ol>
+    <ol type="i">
+      <li> Lowercase roman numerals</li>
+      <li> Lowercase roman numerals 2 </li>
+    </ol>
+    <ol type="I">
+      <li> Uppercase roman numerals </li>
+      <li> Uppercase roman numerals 2 </li>
+    </ol>
+    <!-- default numbering system -->
+    <ol type="1">
+      <li> Number One </li>
+      <li> Numner Two</li>
+    </ol>
+
+    <!-- reversed: This Boolean attribute specifies that the list’s items are in reverse order. Items will be numbered from high to low. -->
+    <ol reversed>
+        <li> First </li>
+        <li> Second </li>
+        <li> Third </li>
+    </ol>
+
+    <!-- we can change start numbering from default number 1 -->
+    <ol start="5">
+        <li> change start </li>
+        <li> changed start </li>
+    </ol>
+
+    <!-- to change the bullet type of unordered list we can use disc, circle, square attribute -->
+
+
+    <h1>HTML Description Lists</h1>
+      <p> HTML also supports description lists. <br>
+      A description list is a list of terms, with a description of each term.  </p>
+
+      <!-- <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: -->
+      <dl>
+          <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+      </dl>
+
+  </body>
+</html>

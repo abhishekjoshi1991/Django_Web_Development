@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Forms in HTML </title>
+    <style media="screen">
+      .bad{
+        border: 2px solid black;
+        padding-left: 50px;
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1> Forms in HTML </h1>
+    <p> Forms are used to collect information/input from user. This information is sent to
+    server for the processing. </p>
+
+    <p> Form tag is used to create HTML form for user input
+      The form element is a container for different types of input elements, such as: text fields,
+      checkboxes, radio buttons, submit buttons, etc </p>
+
+      <h1> HTML input element </h1>
+      <h3> An input element can be displayed in many ways, depending on the type attribute it takes</h3>
+      <br>
+      <h2> Types of input elements </h2>
+
+        <ol>
+          <li> <h3>Input Type Text</h3></li>
+          <p> It displays input field for text input</p>
+            <input type="text" name="username" value="abhishek">
+            <!-- here value of abhishek is stored to name called username if no other value is provided
+            while submitting the form. -->
+
+            <!-- Main important point is, we can give label before input tag to recognize what type of input is.
+            In between opening and closing label tag, we need to specify label name, label also takes 'for' attribute
+            this attribute value must be same as 'id' attribute of input tag below it.
+            that is value of id attribute from input tag and value of for attribute from lable tag
+            must be same.  Let's see example below -->
+
+            <h2> Input fields using label tag </h2>
+              <label for="fname"> First Name: </label>
+                  <input type="text" id="fname" name="fname" value="">
+              <br>
+              <label for="lname"> Last Name: </label>
+                  <input type="text" id="lname" name="lname" value="">
+
+            <br>
+
+            <div class="bad">
+              <h2> Bad practice to write input and label tag (see html code)</h2>
+              <p> First Name:</p>
+                  <input type="text" name="" value="abhishek">
+              <p> Last Name:</p>
+                  <input type="text" name="" value="joshi">
+
+              <br><br>
+              <label> Enter First Name:
+                  <input type="text" name="" value="">
+              </label>
+            </div>
+
+
+          <li> <h3> Input Type Password </h3></li>
+          <label for="pass"> Password: </label>
+          <input type="password" id="pass" name="pass" value="">
+
+
+          <li> <h3> Input Type Submit </h3></li>
+          <p> defines a button for submitting form data to a form-handler. </p>
+          <form>
+            <label for="username"> User: </label>
+            <input type="text" id="username" name="username" value="">
+            <input type="submit" name="" value="Submit">
+          </form>
+
+          <!-- need to provide value as submit or click me or enter anything -->
+          <!-- If we omit the submit button's value attribute, the button will get a default text -->
+
+
+          <li> <h3>Input Type Reset </h3> </li>
+          <p>reset button will reset all form values to their default values (if provided) or blank value</p>
+          <form>
+                <label for="f"> First Name: </label>
+                  <input type="text" id="f" name="f" value=""><br>
+                <label for="l"> Last Name: </label>
+                  <input type="text" id="l" name="l" value=""><br>
+                <input type="submit" name="" value="Click me">
+                <input type="reset" name="" value="Reset">
+          </form>
+
+
+          <li><h3> Input Type Radio </h3></li>
+          <p>Radio buttons let a user select ONLY ONE choice out of number of choices</p>
+          <!-- need to specify radio input first then label to it -->
+          <form>
+            <!-- need to specify values also, as that value go to backend after submit -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male"> Male </label> <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female"> Female </label> <br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other"> Other </label> <br>
+          </form>
+
+
+          <li><h3> Input Type Checkbox </h3></li>
+          <p> let a user select ZERO or MORE options of a limited number of choices </p>
+          <form>
+            <input type="checkbox" id="car" name="vehicle" value="Car">
+            <label for="car"> Car </label><br>
+            <input type="checkbox" id="bike" name="vehicle" value="Bike">
+            <label for="bike"> Bike </label><br>
+            <input type="checkbox" id="boat" name="vehicle" value="Boat">
+            <label for="boat"> Boat </label><br>
+            <input type="submit" name="" value="Submit">
+          </form>
+
+
+          <li><h3> Input Type Button </h3></li>
+          <!-- defines a button -->
+          <input type="button" value="Click Me!">
+
+
+          <li><h3>  Input Type Color </h3></li>
+          <p>Depending on browser support, a color picker can show up in the input field.</p>
+          <form>
+              <label for="favcolor">Select your favorite color:</label>
+              <input type="color" id="favcolor" name="favcolor">
+          </form>
+
+
+          <li><h3>  Input Type Date </h3></li>
+          <p> Depending on browser support, a date picker can show up in the input field. </p>
+          <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+          </form>
+
+
+        </ol>
+
+
+  </body>
+</html>
