@@ -137,6 +137,83 @@
             <input type="date" id="birthday" name="birthday">
           </form>
 
+          <li><h3>  Input Type Datetime-local </h3></li>
+          <p> This specifies a date and time input field, with no time zone. </p>
+          <form>
+            <label for="birthdaytime">Birthday Date Time:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthday">
+          </form>
+
+          <li><h3>  Input Type Email </h3></li>
+          <p> This is used for input fields that should contain an e-mail address.Depending on
+            browser support, the e-mail address can be automatically validated when submitted.. </p>
+          <form>
+            <label for="femail">Email:</label>
+            <input type="email" id="femail" name="email">
+          </form>
+
+          <li><h3>  Input Type File </h3></li>
+          <p> This defines a file-select field and a "Browse" button for file uploads. </p>
+          <form>
+            <label for="myfile">Attach File Here:</label>
+            <input type="file" id="myfile" name="myfile">
+          </form>
+
+          <li><h3>  Input Type Hidden </h3></li>
+          <p> This defines hidden input field (not visible to user while filling the form.)
+          It allows to include data that cannot be seen or modified by users when a form is submitted  </p>
+          <form>
+            <label for="name">Enter name here:</label>
+            <input type="text" id="name" name="name">
+            <input type="hidden" id="city" name="city" value="nashik">
+            <input type="submit" name="" value="Submit">
+          </form>
+
+          <li><h3>  Input Type Month </h3></li>
+          <p> This allows user to select month and year. </p>
+          <form>
+            <label for="birth-month">Select month and year:</label>
+            <input type="month" id="birth-month" name="birth-month">
+          </form>
+
+          <li><h3>  Input Type Week </h3></li>
+          <p> This allows user to select week and year. </p>
+          <form>
+            <label for="week-year">Select month and year:</label>
+            <input type="week" id="week-year" name="week-year">
+          </form>
+
+          <li><h3>  Input Type time </h3></li>
+          <p> This allows user to select time.(not time zone specific) </p>
+          <form>
+            <label for="time1">Select month and year:</label>
+            <input type="time" id="time1" name="time1">
+          </form>
+
+          <li><h3>  Input Type Number: </h3></li>
+          <p> This allows user to define a numeric field.
+          We can also set min and max restriction for number to be selected. </p>
+          <form>
+            <label for="quant">Select qunatity to manufacture:</label>
+            <input type="number" id="quant" name="quant" min="1" max="5">
+            <input type="submit" name="" value="submit">
+
+            <p> Follwong is example to select number from 1 to 100, with step of 10 and default value of 30.</p>
+
+            <label for="quant1">Select qunatity to manufacture:</label>
+            <input type="number" id="quant1" name="quant1" min="1" max="100" step="10" value="30">
+            <input type="submit" name="" value="submit">
+          </form>
+
+          <li><h3>  Input Type Range </h3></li>
+          <p> Defines a control for entering the number as slider control. Default range is 1 to 100. We can
+          change the range using min max attribute. </p>
+          <form>
+            <label for="volume">Select month and year:</label>
+            <input type="range" id="volume" name="volumn" max="150">
+            <input type="submit" name="" value="submit">
+          </form>
+
 
         </ol>
 
